@@ -1,0 +1,1 @@
+in home page on generate buton click, if user is logged in then navigate to Result page, otherwise show login signup component
