@@ -77,7 +77,7 @@ export const loginController = async (req, res) => {
     return res
       .status(200)
       .json({
-        message: `Welcome back ${userAvailable.userName}`,
+        message: `Welcome ${userAvailable.userName}`,
         success: true, userCredits : userAvailable.userAvailablecredits, userName: userAvailable.userName, userToken:token 
       });
   } catch (error) {
