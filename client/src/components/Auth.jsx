@@ -30,7 +30,7 @@ function Auth() {
     console.log("email", email);
     console.log("password", password);
     try {
-      const { data } = await axios.post('http://localhost:3000/api/v1/user/signup', { userName, email, password });
+      const { data } = await axios.post('https://genmyimage.onrender.com/api/v1/user/signup', { userName, email, password });
       console.log(data);
       if (data.success) {
         toast.success(data.message);
@@ -49,7 +49,7 @@ function Auth() {
     console.log(email);
     console.log(password);
     try {
-      const { data } = await axios.post('http://localhost:3000/api/v1/user/login', { email, password }, { withCredentials: true });
+      const { data } = await axios.post('https://genmyimage.onrender.com/api/v1/user/login', { email, password }, { withCredentials: true });
     
       if (data.success) {
         toast.success(data.message);

@@ -26,7 +26,7 @@ function Result() {
   const generateImage = async () => {
     try {
       const { data } = await axios.post(
-        'http://localhost:3000/api/v1/image/generate',
+        'https://genmyimage.onrender.com/api/v1/image/generate',
         { prompt }, // Send the prompt
         { headers: { 'Authorization': `Bearer ${appToken}` } } // Correct token in the headers
       );

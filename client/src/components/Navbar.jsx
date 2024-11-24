@@ -16,7 +16,7 @@ function Navbar() {
   // Function to fetch the user credits
   const fetchDetails = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/api/v1/user/credits', {
+      const { data } = await axios.get('https://genmyimage.onrender.com/api/v1/user/credits', {
         withCredentials: true,  // Make sure to send cookies if needed
       });
       console.log(data); // Log the resp
