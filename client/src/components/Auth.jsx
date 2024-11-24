@@ -50,7 +50,7 @@ function Auth() {
     console.log(password);
     try {
       const { data } = await axios.post('http://localhost:3000/api/v1/user/login', { email, password }, { withCredentials: true });
-      console.log(data);
+    
       if (data.success) {
         toast.success(data.message);
         setTotalCredits(data.userCredits);
